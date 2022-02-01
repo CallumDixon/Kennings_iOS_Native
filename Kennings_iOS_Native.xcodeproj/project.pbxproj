@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */; };
+		90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1B27A98CD8002768D4 /* ContentView.swift */; };
+		90B6CB1E27A98CD9002768D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B6CB1D27A98CD9002768D4 /* Assets.xcassets */; };
+		90B6CB2127A98CD9002768D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B6CB2027A98CD9002768D4 /* Preview Assets.xcassets */; };
+		90B6CB2B27A98CD9002768D4 /* Kennings_iOS_NativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB2A27A98CD9002768D4 /* Kennings_iOS_NativeTests.swift */; };
+		90B6CB3527A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB3427A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift */; };
+		90B6CB3727A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB3627A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90B6CB2727A98CD9002768D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90B6CB0E27A98CD8002768D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90B6CB1527A98CD8002768D4;
+			remoteInfo = Kennings_iOS_Native;
+		};
+		90B6CB3127A98CD9002768D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90B6CB0E27A98CD8002768D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90B6CB1527A98CD8002768D4;
+			remoteInfo = Kennings_iOS_Native;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kennings_iOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeApp.swift; sourceTree = "<group>"; };
+		90B6CB1B27A98CD8002768D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90B6CB1D27A98CD9002768D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90B6CB2027A98CD9002768D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90B6CB2627A98CD9002768D4 /* Kennings_iOS_NativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kennings_iOS_NativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B6CB2A27A98CD9002768D4 /* Kennings_iOS_NativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeTests.swift; sourceTree = "<group>"; };
+		90B6CB3027A98CD9002768D4 /* Kennings_iOS_NativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kennings_iOS_NativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B6CB3427A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeUITests.swift; sourceTree = "<group>"; };
+		90B6CB3627A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90B6CB1327A98CD8002768D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90B6CB2327A98CD9002768D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90B6CB2D27A98CD9002768D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90B6CB0D27A98CD8002768D4 = {
+			isa = PBXGroup;
+			children = (
+				90B6CB1827A98CD8002768D4 /* Kennings_iOS_Native */,
+				90B6CB2927A98CD9002768D4 /* Kennings_iOS_NativeTests */,
+				90B6CB3327A98CD9002768D4 /* Kennings_iOS_NativeUITests */,
+				90B6CB1727A98CD8002768D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90B6CB1727A98CD8002768D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */,
+				90B6CB2627A98CD9002768D4 /* Kennings_iOS_NativeTests.xctest */,
+				90B6CB3027A98CD9002768D4 /* Kennings_iOS_NativeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90B6CB1827A98CD8002768D4 /* Kennings_iOS_Native */ = {
+			isa = PBXGroup;
+			children = (
+				90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */,
+				90B6CB1B27A98CD8002768D4 /* ContentView.swift */,
+				90B6CB1D27A98CD9002768D4 /* Assets.xcassets */,
+				90B6CB1F27A98CD9002768D4 /* Preview Content */,
+			);
+			path = Kennings_iOS_Native;
+			sourceTree = "<group>";
+		};
+		90B6CB1F27A98CD9002768D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				90B6CB2027A98CD9002768D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90B6CB2927A98CD9002768D4 /* Kennings_iOS_NativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				90B6CB2A27A98CD9002768D4 /* Kennings_iOS_NativeTests.swift */,
+			);
+			path = Kennings_iOS_NativeTests;
+			sourceTree = "<group>";
+		};
+		90B6CB3327A98CD9002768D4 /* Kennings_iOS_NativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90B6CB3427A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift */,
+				90B6CB3627A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift */,
+			);
+			path = Kennings_iOS_NativeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90B6CB1527A98CD8002768D4 /* Kennings_iOS_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90B6CB3A27A98CD9002768D4 /* Build configuration list for PBXNativeTarget "Kennings_iOS_Native" */;
+			buildPhases = (
+				90B6CB1227A98CD8002768D4 /* Sources */,
+				90B6CB1327A98CD8002768D4 /* Frameworks */,
+				90B6CB1427A98CD8002768D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kennings_iOS_Native;
+			productName = Kennings_iOS_Native;
+			productReference = 90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90B6CB2527A98CD9002768D4 /* Kennings_iOS_NativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90B6CB3D27A98CD9002768D4 /* Build configuration list for PBXNativeTarget "Kennings_iOS_NativeTests" */;
+			buildPhases = (
+				90B6CB2227A98CD9002768D4 /* Sources */,
+				90B6CB2327A98CD9002768D4 /* Frameworks */,
+				90B6CB2427A98CD9002768D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90B6CB2827A98CD9002768D4 /* PBXTargetDependency */,
+			);
+			name = Kennings_iOS_NativeTests;
+			productName = Kennings_iOS_NativeTests;
+			productReference = 90B6CB2627A98CD9002768D4 /* Kennings_iOS_NativeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		90B6CB2F27A98CD9002768D4 /* Kennings_iOS_NativeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90B6CB4027A98CD9002768D4 /* Build configuration list for PBXNativeTarget "Kennings_iOS_NativeUITests" */;
+			buildPhases = (
+				90B6CB2C27A98CD9002768D4 /* Sources */,
+				90B6CB2D27A98CD9002768D4 /* Frameworks */,
+				90B6CB2E27A98CD9002768D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90B6CB3227A98CD9002768D4 /* PBXTargetDependency */,
+			);
+			name = Kennings_iOS_NativeUITests;
+			productName = Kennings_iOS_NativeUITests;
+			productReference = 90B6CB3027A98CD9002768D4 /* Kennings_iOS_NativeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90B6CB0E27A98CD8002768D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					90B6CB1527A98CD8002768D4 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					90B6CB2527A98CD9002768D4 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 90B6CB1527A98CD8002768D4;
+					};
+					90B6CB2F27A98CD9002768D4 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 90B6CB1527A98CD8002768D4;
+					};
+				};
+			};
+			buildConfigurationList = 90B6CB1127A98CD8002768D4 /* Build configuration list for PBXProject "Kennings_iOS_Native" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90B6CB0D27A98CD8002768D4;
+			productRefGroup = 90B6CB1727A98CD8002768D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90B6CB1527A98CD8002768D4 /* Kennings_iOS_Native */,
+				90B6CB2527A98CD9002768D4 /* Kennings_iOS_NativeTests */,
+				90B6CB2F27A98CD9002768D4 /* Kennings_iOS_NativeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90B6CB1427A98CD8002768D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B6CB2127A98CD9002768D4 /* Preview Assets.xcassets in Resources */,
+				90B6CB1E27A98CD9002768D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90B6CB2427A98CD9002768D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90B6CB2E27A98CD9002768D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90B6CB1227A98CD8002768D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */,
+				90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90B6CB2227A98CD9002768D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B6CB2B27A98CD9002768D4 /* Kennings_iOS_NativeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90B6CB2C27A98CD9002768D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B6CB3727A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift in Sources */,
+				90B6CB3527A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90B6CB2827A98CD9002768D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90B6CB1527A98CD8002768D4 /* Kennings_iOS_Native */;
+			targetProxy = 90B6CB2727A98CD9002768D4 /* PBXContainerItemProxy */;
+		};
+		90B6CB3227A98CD9002768D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90B6CB1527A98CD8002768D4 /* Kennings_iOS_Native */;
+			targetProxy = 90B6CB3127A98CD9002768D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		90B6CB3827A98CD9002768D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90B6CB3927A98CD9002768D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90B6CB3B27A98CD9002768D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kennings_iOS_Native/Preview Content\"";
+				DEVELOPMENT_TEAM = S93785KKLG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sc18cd.Kennings-iOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90B6CB3C27A98CD9002768D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kennings_iOS_Native/Preview Content\"";
+				DEVELOPMENT_TEAM = S93785KKLG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sc18cd.Kennings-iOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		90B6CB3E27A98CD9002768D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S93785KKLG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sc18cd.Kennings-iOS-NativeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kennings_iOS_Native.app/Kennings_iOS_Native";
+			};
+			name = Debug;
+		};
+		90B6CB3F27A98CD9002768D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S93785KKLG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sc18cd.Kennings-iOS-NativeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kennings_iOS_Native.app/Kennings_iOS_Native";
+			};
+			name = Release;
+		};
+		90B6CB4127A98CD9002768D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S93785KKLG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sc18cd.Kennings-iOS-NativeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kennings_iOS_Native;
+			};
+			name = Debug;
+		};
+		90B6CB4227A98CD9002768D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S93785KKLG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sc18cd.Kennings-iOS-NativeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kennings_iOS_Native;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90B6CB1127A98CD8002768D4 /* Build configuration list for PBXProject "Kennings_iOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B6CB3827A98CD9002768D4 /* Debug */,
+				90B6CB3927A98CD9002768D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90B6CB3A27A98CD9002768D4 /* Build configuration list for PBXNativeTarget "Kennings_iOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B6CB3B27A98CD9002768D4 /* Debug */,
+				90B6CB3C27A98CD9002768D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90B6CB3D27A98CD9002768D4 /* Build configuration list for PBXNativeTarget "Kennings_iOS_NativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B6CB3E27A98CD9002768D4 /* Debug */,
+				90B6CB3F27A98CD9002768D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90B6CB4027A98CD9002768D4 /* Build configuration list for PBXNativeTarget "Kennings_iOS_NativeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B6CB4127A98CD9002768D4 /* Debug */,
+				90B6CB4227A98CD9002768D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90B6CB0E27A98CD8002768D4 /* Project object */;
+}
