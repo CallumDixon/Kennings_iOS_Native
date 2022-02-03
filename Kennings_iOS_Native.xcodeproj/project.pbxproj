@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06CCFBE09BA574EEA23E2DAE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDEADA7596534445FAE363F /* Product.swift */; };
+		271555C66864E28373F1BB3B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 754BBD315780BAFA3F622005 /* awsconfiguration.json */; };
+		3B85A3D1A6044D78C02E5447 /* Product+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5597299FD07F499594FCAAC /* Product+Schema.swift */; };
+		46ACF6CACA496A59CD1FA79B /* Category+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */; };
+		7C7FB63A9C669AC2C00831B5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA88E850B15CD537FF401B /* Category.swift */; };
+		90460F4D27ABF9880015728B /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4C27ABF9880015728B /* AWSAPIPlugin */; };
+		90460F4F27ABF9880015728B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4E27ABF9880015728B /* Amplify */; };
 		90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */; };
 		90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1B27A98CD8002768D4 /* ContentView.swift */; };
 		90B6CB1E27A98CD9002768D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B6CB1D27A98CD9002768D4 /* Assets.xcassets */; };
@@ -14,6 +21,12 @@
 		90B6CB2B27A98CD9002768D4 /* Kennings_iOS_NativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB2A27A98CD9002768D4 /* Kennings_iOS_NativeTests.swift */; };
 		90B6CB3527A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB3427A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift */; };
 		90B6CB3727A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB3627A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift */; };
+		90D3516A27AA98B800BC2559 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3516927AA98B800BC2559 /* HomeView.swift */; };
+		90D3516C27AA99C800BC2559 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3516B27AA99C800BC2559 /* BrowseView.swift */; };
+		90D3516E27AA99E400BC2559 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3516D27AA99E400BC2559 /* AccountView.swift */; };
+		90D3517027AA99F400BC2559 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3516F27AA99F400BC2559 /* BasketView.swift */; };
+		A8E7A29FB2225E2C1E6C5E3C /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5973EFAF123F3E09C0814A8A /* amplifyconfiguration.json */; };
+		E39ABB94E91FB9AC9945EC64 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0AC7DF214A561EF528377 /* AmplifyModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06E0AC7DF214A561EF528377 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		5973EFAF123F3E09C0814A8A /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		5BDA88E850B15CD537FF401B /* Category.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Category.swift; path = amplify/generated/models/Category.swift; sourceTree = "<group>"; };
+		754BBD315780BAFA3F622005 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "Category+Schema.swift"; path = "amplify/generated/models/Category+Schema.swift"; sourceTree = "<group>"; };
 		90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kennings_iOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeApp.swift; sourceTree = "<group>"; };
 		90B6CB1B27A98CD8002768D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +62,12 @@
 		90B6CB3027A98CD9002768D4 /* Kennings_iOS_NativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kennings_iOS_NativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B6CB3427A98CD9002768D4 /* Kennings_iOS_NativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeUITests.swift; sourceTree = "<group>"; };
 		90B6CB3627A98CD9002768D4 /* Kennings_iOS_NativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		90D3516927AA98B800BC2559 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		90D3516B27AA99C800BC2559 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		90D3516D27AA99E400BC2559 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		90D3516F27AA99F400BC2559 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		CCDEADA7596534445FAE363F /* Product.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Product.swift; path = amplify/generated/models/Product.swift; sourceTree = "<group>"; };
+		E5597299FD07F499594FCAAC /* Product+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "Product+Schema.swift"; path = "amplify/generated/models/Product+Schema.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90460F4D27ABF9880015728B /* AWSAPIPlugin in Frameworks */,
+				90460F4F27ABF9880015728B /* Amplify in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +97,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7EDE451FEFA8D3CAD93F30 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				06E0AC7DF214A561EF528377 /* AmplifyModels.swift */,
+				8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */,
+				5BDA88E850B15CD537FF401B /* Category.swift */,
+				E5597299FD07F499594FCAAC /* Product+Schema.swift */,
+				CCDEADA7596534445FAE363F /* Product.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
+		5C79F790251C880DF080F1EE /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 		90B6CB0D27A98CD8002768D4 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +123,8 @@
 				90B6CB2927A98CD9002768D4 /* Kennings_iOS_NativeTests */,
 				90B6CB3327A98CD9002768D4 /* Kennings_iOS_NativeUITests */,
 				90B6CB1727A98CD8002768D4 /* Products */,
+				5C79F790251C880DF080F1EE /* AmplifyConfig */,
+				1D7EDE451FEFA8D3CAD93F30 /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +141,9 @@
 		90B6CB1827A98CD8002768D4 /* Kennings_iOS_Native */ = {
 			isa = PBXGroup;
 			children = (
+				754BBD315780BAFA3F622005 /* awsconfiguration.json */,
+				5973EFAF123F3E09C0814A8A /* amplifyconfiguration.json */,
+				90D3516827AA989C00BC2559 /* Views */,
 				90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */,
 				90B6CB1B27A98CD8002768D4 /* ContentView.swift */,
 				90B6CB1D27A98CD9002768D4 /* Assets.xcassets */,
@@ -127,6 +177,17 @@
 			path = Kennings_iOS_NativeUITests;
 			sourceTree = "<group>";
 		};
+		90D3516827AA989C00BC2559 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90D3516927AA98B800BC2559 /* HomeView.swift */,
+				90D3516B27AA99C800BC2559 /* BrowseView.swift */,
+				90D3516D27AA99E400BC2559 /* AccountView.swift */,
+				90D3516F27AA99F400BC2559 /* BasketView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +204,10 @@
 			dependencies = (
 			);
 			name = Kennings_iOS_Native;
+			packageProductDependencies = (
+				90460F4C27ABF9880015728B /* AWSAPIPlugin */,
+				90460F4E27ABF9880015728B /* Amplify */,
+			);
 			productName = Kennings_iOS_Native;
 			productReference = 90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +280,9 @@
 				Base,
 			);
 			mainGroup = 90B6CB0D27A98CD8002768D4;
+			packageReferences = (
+				90460F4B27ABF9880015728B /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
 			productRefGroup = 90B6CB1727A98CD8002768D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +301,8 @@
 			files = (
 				90B6CB2127A98CD9002768D4 /* Preview Assets.xcassets in Resources */,
 				90B6CB1E27A98CD9002768D4 /* Assets.xcassets in Resources */,
+				271555C66864E28373F1BB3B /* awsconfiguration.json in Resources */,
+				A8E7A29FB2225E2C1E6C5E3C /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D3517027AA99F400BC2559 /* BasketView.swift in Sources */,
+				90D3516C27AA99C800BC2559 /* BrowseView.swift in Sources */,
+				90D3516A27AA98B800BC2559 /* HomeView.swift in Sources */,
 				90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */,
 				90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */,
+				90D3516E27AA99E400BC2559 /* AccountView.swift in Sources */,
+				E39ABB94E91FB9AC9945EC64 /* AmplifyModels.swift in Sources */,
+				46ACF6CACA496A59CD1FA79B /* Category+Schema.swift in Sources */,
+				7C7FB63A9C669AC2C00831B5 /* Category.swift in Sources */,
+				3B85A3D1A6044D78C02E5447 /* Product+Schema.swift in Sources */,
+				06CCFBE09BA574EEA23E2DAE /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +664,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90460F4B27ABF9880015728B /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90460F4C27ABF9880015728B /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90460F4B27ABF9880015728B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		90460F4E27ABF9880015728B /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90460F4B27ABF9880015728B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90B6CB0E27A98CD8002768D4 /* Project object */;
 }
