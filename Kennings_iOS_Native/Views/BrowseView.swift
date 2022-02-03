@@ -16,7 +16,7 @@ struct BrowseView: View {
           Text("Browse View")
         }
         .onAppear{
-            listTodos()
+            QueryCategories(Parent: "Categories")
         }
     }
 }
@@ -27,13 +27,26 @@ struct BrowseView_Previews: PreviewProvider {
     }
 }
 
-func listTodos() {
-    Amplify.API.query(request: .paginatedList(Category.self, limit: 1000)) { event in
+func QueryCategories(Parent: String) {
+    
+    let filter = Category.keys.parent == Parent
+    
+    Amplify.API.query(request: .paginatedList(Category.self, where: filter ,limit: 1000)) { event in
         switch event {
         case .success(let result):
             switch result {
             case .success(let categories):
-                for category in categories {
+                
+                let sortedCategories = categories.sorted(by: {(i1, i2) -> Bool in
+                    
+                    if let Ui1 = i1.order, let Ui2 = i2.order {
+                        return (Ui1 < Ui2)
+                    }
+                    return false
+                })
+                
+                
+                for category in sortedCategories {
                     print(category.name)
                 }
             case .failure(let error):
