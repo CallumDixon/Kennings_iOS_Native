@@ -14,6 +14,7 @@
 		7C7FB63A9C669AC2C00831B5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA88E850B15CD537FF401B /* Category.swift */; };
 		90460F4D27ABF9880015728B /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4C27ABF9880015728B /* AWSAPIPlugin */; };
 		90460F4F27ABF9880015728B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4E27ABF9880015728B /* Amplify */; };
+		905454B027B3F47100A352D1 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905454AF27B3F47100A352D1 /* BrowseViewModel.swift */; };
 		90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */; };
 		90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1B27A98CD8002768D4 /* ContentView.swift */; };
 		90B6CB1E27A98CD9002768D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B6CB1D27A98CD9002768D4 /* Assets.xcassets */; };
@@ -47,11 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06E0AC7DF214A561EF528377 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		06E0AC7DF214A561EF528377 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		5973EFAF123F3E09C0814A8A /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		5BDA88E850B15CD537FF401B /* Category.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Category.swift; path = amplify/generated/models/Category.swift; sourceTree = "<group>"; };
+		5BDA88E850B15CD537FF401B /* Category.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Category.swift; path = amplify/generated/models/Category.swift; sourceTree = "<group>"; };
 		754BBD315780BAFA3F622005 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "Category+Schema.swift"; path = "amplify/generated/models/Category+Schema.swift"; sourceTree = "<group>"; };
+		8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Category+Schema.swift"; path = "amplify/generated/models/Category+Schema.swift"; sourceTree = "<group>"; };
+		905454AF27B3F47100A352D1 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
 		90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kennings_iOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeApp.swift; sourceTree = "<group>"; };
 		90B6CB1B27A98CD8002768D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,8 +68,8 @@
 		90D3516B27AA99C800BC2559 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		90D3516D27AA99E400BC2559 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		90D3516F27AA99F400BC2559 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
-		CCDEADA7596534445FAE363F /* Product.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = Product.swift; path = amplify/generated/models/Product.swift; sourceTree = "<group>"; };
-		E5597299FD07F499594FCAAC /* Product+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "Product+Schema.swift"; path = "amplify/generated/models/Product+Schema.swift"; sourceTree = "<group>"; };
+		CCDEADA7596534445FAE363F /* Product.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Product.swift; path = amplify/generated/models/Product.swift; sourceTree = "<group>"; };
+		E5597299FD07F499594FCAAC /* Product+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Product+Schema.swift"; path = "amplify/generated/models/Product+Schema.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,14 @@
 			name = AmplifyConfig;
 			sourceTree = "<group>";
 		};
+		905454AE27B3F44400A352D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				905454AF27B3F47100A352D1 /* BrowseViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		90B6CB0D27A98CD8002768D4 = {
 			isa = PBXGroup;
 			children = (
@@ -141,9 +151,10 @@
 		90B6CB1827A98CD8002768D4 /* Kennings_iOS_Native */ = {
 			isa = PBXGroup;
 			children = (
+				905454AE27B3F44400A352D1 /* ViewModels */,
+				90D3516827AA989C00BC2559 /* Views */,
 				754BBD315780BAFA3F622005 /* awsconfiguration.json */,
 				5973EFAF123F3E09C0814A8A /* amplifyconfiguration.json */,
-				90D3516827AA989C00BC2559 /* Views */,
 				90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */,
 				90B6CB1B27A98CD8002768D4 /* ContentView.swift */,
 				90B6CB1D27A98CD9002768D4 /* Assets.xcassets */,
@@ -337,6 +348,7 @@
 				46ACF6CACA496A59CD1FA79B /* Category+Schema.swift in Sources */,
 				7C7FB63A9C669AC2C00831B5 /* Category.swift in Sources */,
 				3B85A3D1A6044D78C02E5447 /* Product+Schema.swift in Sources */,
+				905454B027B3F47100A352D1 /* BrowseViewModel.swift in Sources */,
 				06CCFBE09BA574EEA23E2DAE /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

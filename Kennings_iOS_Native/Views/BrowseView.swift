@@ -9,51 +9,55 @@ import SwiftUI
 import Amplify
 
 struct BrowseView: View {
+    
+    @ObservedObject var CategoriesVM = BrowseViewModel(Parent: "Categories")
     var body: some View {
-        ZStack {
-            Color.init(UIColor(hexString: "F2F2F2"))
-            .edgesIgnoringSafeArea(.all)
-          Text("Browse View")
-        }
-        .onAppear{
-            QueryCategories(Parent: "Categories")
-        }
-    }
-}
-
-struct BrowseView_Previews: PreviewProvider {
-    static var previews: some View {
-        BrowseView()
-    }
-}
-
-func QueryCategories(Parent: String) {
-    
-    let filter = Category.keys.parent == Parent
-    
-    Amplify.API.query(request: .paginatedList(Category.self, where: filter ,limit: 1000)) { event in
-        switch event {
-        case .success(let result):
-            switch result {
-            case .success(let categories):
+        
+        NavigationView{
+            
+            ZStack {
+                Color.init(UIColor(hexString: "F2F2F2"))
+                .edgesIgnoringSafeArea(.all)
                 
-                let sortedCategories = categories.sorted(by: {(i1, i2) -> Bool in
-                    
-                    if let Ui1 = i1.order, let Ui2 = i2.order {
-                        return (Ui1 < Ui2)
-                    }
-                    return false
-                })
-                
-                
-                for category in sortedCategories {
-                    print(category.name)
+                if CategoriesVM.loading {
+                    ProgressView()
                 }
-            case .failure(let error):
-                print("Got failed result with \(error.errorDescription)")
+                else {
+                    ScrollView{
+                        VStack{
+                            ForEach(CategoriesVM.categoryList, id:\.id) {category in
+                                CategoryView(name: category.name)
+                            }
+                        }
+                    }.padding(.top,1)
+                }
+            }.navigationTitle("Title")
+            .onAppear{
+                CategoriesVM.QueryCategories()
             }
-        case .failure(let error):
-            print("Got failed event with error \(error)")
         }
+    }
+}
+
+struct CategoryView: View {
+    
+    var name: String
+    
+    var body: some View {
+        
+        Text(name)
+            .frame(width: 300, height: 50)
+            .padding(10)
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.gray)
+            )
+    }
+}
+
+struct CategoryView_Previews: PreviewProvider {
+    static var previews: some View {
+        CategoryView(name: "Timber & Sheet Materials")
+            .previewLayout(.sizeThatFits)
     }
 }
