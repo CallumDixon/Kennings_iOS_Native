@@ -15,6 +15,7 @@
 		90460F4D27ABF9880015728B /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4C27ABF9880015728B /* AWSAPIPlugin */; };
 		90460F4F27ABF9880015728B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4E27ABF9880015728B /* Amplify */; };
 		905454B027B3F47100A352D1 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905454AF27B3F47100A352D1 /* BrowseViewModel.swift */; };
+		90AF26D127B404DB009EC555 /* BrowseNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AF26D027B404DB009EC555 /* BrowseNavigatorView.swift */; };
 		90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */; };
 		90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6CB1B27A98CD8002768D4 /* ContentView.swift */; };
 		90B6CB1E27A98CD9002768D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B6CB1D27A98CD9002768D4 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		754BBD315780BAFA3F622005 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Category+Schema.swift"; path = "amplify/generated/models/Category+Schema.swift"; sourceTree = "<group>"; };
 		905454AF27B3F47100A352D1 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
+		90AF26D027B404DB009EC555 /* BrowseNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseNavigatorView.swift; sourceTree = "<group>"; };
 		90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kennings_iOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kennings_iOS_NativeApp.swift; sourceTree = "<group>"; };
 		90B6CB1B27A98CD8002768D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				90D3516B27AA99C800BC2559 /* BrowseView.swift */,
 				90D3516D27AA99E400BC2559 /* AccountView.swift */,
 				90D3516F27AA99F400BC2559 /* BasketView.swift */,
+				90AF26D027B404DB009EC555 /* BrowseNavigatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			files = (
 				90D3517027AA99F400BC2559 /* BasketView.swift in Sources */,
 				90D3516C27AA99C800BC2559 /* BrowseView.swift in Sources */,
+				90AF26D127B404DB009EC555 /* BrowseNavigatorView.swift in Sources */,
 				90D3516A27AA98B800BC2559 /* HomeView.swift in Sources */,
 				90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */,
 				90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */,

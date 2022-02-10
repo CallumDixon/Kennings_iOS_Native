@@ -17,7 +17,7 @@ struct ContentView: View {
                     Text("Home")
                     Image(systemName: "house.fill")
                 }
-            BrowseView()
+            BrowseNavigatorView(initialTitle: "Categories")
                 .tabItem{
                     Text("Browse")
                     Image(systemName: "text.book.closed.fill")
