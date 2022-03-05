@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct BasketView: View {
+    
+    @EnvironmentObject var Basket: BasketViewModel
+    
+    
     var body: some View {
-        ZStack {
-            Color.init(UIColor(hexString: "F2F2F2"))
-            .edgesIgnoringSafeArea(.all)
-          Text("Basket View")
+        ScrollView{
+            VStack {
+                Color.init(UIColor(hexString: "F2F2F2"))
+                .edgesIgnoringSafeArea(.all)
+                ForEach(Basket.currentBasket, id: \.self){ item in
+                    Text(item)
+                }
+            }
         }
     }
 }

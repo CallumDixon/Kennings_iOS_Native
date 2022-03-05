@@ -14,7 +14,7 @@ struct BrowseNavigatorView: View {
     var body: some View {
         NavigationView {
             BrowseView(title: initialTitle)
-        }
+        }.navigationViewStyle(.stack) 
     }
 }
 

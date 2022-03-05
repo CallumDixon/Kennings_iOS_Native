@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		06CCFBE09BA574EEA23E2DAE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDEADA7596534445FAE363F /* Product.swift */; };
-		271555C66864E28373F1BB3B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 754BBD315780BAFA3F622005 /* awsconfiguration.json */; };
 		3B85A3D1A6044D78C02E5447 /* Product+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5597299FD07F499594FCAAC /* Product+Schema.swift */; };
 		46ACF6CACA496A59CD1FA79B /* Category+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */; };
+		5B193B6AD341EBA99EAFBE0E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D0D2EC1D3A71C0783B636FD /* awsconfiguration.json */; };
 		7C7FB63A9C669AC2C00831B5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA88E850B15CD537FF401B /* Category.swift */; };
+		90392A8F27D36F150052F488 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90392A8E27D36F150052F488 /* ProductsView.swift */; };
+		90392A9127D38BF10052F488 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90392A9027D38BF10052F488 /* ProductsViewModel.swift */; };
+		90392A9627D3CB580052F488 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90392A9527D3CB580052F488 /* ProductView.swift */; };
+		90392A9827D3CC070052F488 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90392A9727D3CC070052F488 /* ProductViewModel.swift */; };
+		90392A9C27D3D1D20052F488 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90392A9B27D3D1D20052F488 /* BasketViewModel.swift */; };
 		90460F4D27ABF9880015728B /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4C27ABF9880015728B /* AWSAPIPlugin */; };
 		90460F4F27ABF9880015728B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 90460F4E27ABF9880015728B /* Amplify */; };
 		905454B027B3F47100A352D1 /* BrowseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905454AF27B3F47100A352D1 /* BrowseViewModel.swift */; };
@@ -50,10 +55,17 @@
 
 /* Begin PBXFileReference section */
 		06E0AC7DF214A561EF528377 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		1C0BBE6A2EE6A4357E50037B /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		5973EFAF123F3E09C0814A8A /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		5BDA88E850B15CD537FF401B /* Category.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Category.swift; path = amplify/generated/models/Category.swift; sourceTree = "<group>"; };
-		754BBD315780BAFA3F622005 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		6D0D2EC1D3A71C0783B636FD /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		8DC11F59DE4E5E32EE92C676 /* Category+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Category+Schema.swift"; path = "amplify/generated/models/Category+Schema.swift"; sourceTree = "<group>"; };
+		90392A8E27D36F150052F488 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		90392A9027D38BF10052F488 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		90392A9427D3C2660052F488 /* awsconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		90392A9527D3CB580052F488 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		90392A9727D3CC070052F488 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		90392A9B27D3D1D20052F488 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
 		905454AF27B3F47100A352D1 /* BrowseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewModel.swift; sourceTree = "<group>"; };
 		90AF26D027B404DB009EC555 /* BrowseNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseNavigatorView.swift; sourceTree = "<group>"; };
 		90B6CB1627A98CD8002768D4 /* Kennings_iOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kennings_iOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +128,8 @@
 		5C79F790251C880DF080F1EE /* AmplifyConfig */ = {
 			isa = PBXGroup;
 			children = (
+				6D0D2EC1D3A71C0783B636FD /* awsconfiguration.json */,
+				1C0BBE6A2EE6A4357E50037B /* amplifyconfiguration.json */,
 			);
 			name = AmplifyConfig;
 			sourceTree = "<group>";
@@ -124,6 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				905454AF27B3F47100A352D1 /* BrowseViewModel.swift */,
+				90392A9027D38BF10052F488 /* ProductsViewModel.swift */,
+				90392A9727D3CC070052F488 /* ProductViewModel.swift */,
+				90392A9B27D3D1D20052F488 /* BasketViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -153,9 +170,9 @@
 		90B6CB1827A98CD8002768D4 /* Kennings_iOS_Native */ = {
 			isa = PBXGroup;
 			children = (
+				90392A9427D3C2660052F488 /* awsconfiguration.json */,
 				905454AE27B3F44400A352D1 /* ViewModels */,
 				90D3516827AA989C00BC2559 /* Views */,
-				754BBD315780BAFA3F622005 /* awsconfiguration.json */,
 				5973EFAF123F3E09C0814A8A /* amplifyconfiguration.json */,
 				90B6CB1927A98CD8002768D4 /* Kennings_iOS_NativeApp.swift */,
 				90B6CB1B27A98CD8002768D4 /* ContentView.swift */,
@@ -198,6 +215,8 @@
 				90D3516D27AA99E400BC2559 /* AccountView.swift */,
 				90D3516F27AA99F400BC2559 /* BasketView.swift */,
 				90AF26D027B404DB009EC555 /* BrowseNavigatorView.swift */,
+				90392A8E27D36F150052F488 /* ProductsView.swift */,
+				90392A9527D3CB580052F488 /* ProductView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,8 +334,8 @@
 			files = (
 				90B6CB2127A98CD9002768D4 /* Preview Assets.xcassets in Resources */,
 				90B6CB1E27A98CD9002768D4 /* Assets.xcassets in Resources */,
-				271555C66864E28373F1BB3B /* awsconfiguration.json in Resources */,
 				A8E7A29FB2225E2C1E6C5E3C /* amplifyconfiguration.json in Resources */,
+				5B193B6AD341EBA99EAFBE0E /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,19 +360,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90392A9827D3CC070052F488 /* ProductViewModel.swift in Sources */,
 				90D3517027AA99F400BC2559 /* BasketView.swift in Sources */,
 				90D3516C27AA99C800BC2559 /* BrowseView.swift in Sources */,
 				90AF26D127B404DB009EC555 /* BrowseNavigatorView.swift in Sources */,
+				90392A9C27D3D1D20052F488 /* BasketViewModel.swift in Sources */,
 				90D3516A27AA98B800BC2559 /* HomeView.swift in Sources */,
+				90392A8F27D36F150052F488 /* ProductsView.swift in Sources */,
 				90B6CB1C27A98CD8002768D4 /* ContentView.swift in Sources */,
 				90B6CB1A27A98CD8002768D4 /* Kennings_iOS_NativeApp.swift in Sources */,
 				90D3516E27AA99E400BC2559 /* AccountView.swift in Sources */,
+				90392A9627D3CB580052F488 /* ProductView.swift in Sources */,
 				E39ABB94E91FB9AC9945EC64 /* AmplifyModels.swift in Sources */,
 				46ACF6CACA496A59CD1FA79B /* Category+Schema.swift in Sources */,
 				7C7FB63A9C669AC2C00831B5 /* Category.swift in Sources */,
 				3B85A3D1A6044D78C02E5447 /* Product+Schema.swift in Sources */,
 				905454B027B3F47100A352D1 /* BrowseViewModel.swift in Sources */,
 				06CCFBE09BA574EEA23E2DAE /* Product.swift in Sources */,
+				90392A9127D38BF10052F488 /* ProductsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

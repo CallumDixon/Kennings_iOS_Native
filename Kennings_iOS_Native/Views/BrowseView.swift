@@ -15,8 +15,8 @@ struct BrowseView: View {
     init(title: String){
         _CategoriesVM = StateObject(wrappedValue: BrowseViewModel(Parent: title))
     }
-
     
+    @ViewBuilder
     var body: some View {
         
         ZStack {
@@ -27,21 +27,28 @@ struct BrowseView: View {
                 ProgressView()
             }
             else {
+                
                 ScrollView{
                     VStack{
                         ForEach(CategoriesVM.categoryList, id:\.id) {category in
-                            
-                            NavigationLink(destination: BrowseView(title: category.name)){
-                                CategoryView(name: category.name)
+                            Group{
+                                
+                                if category.leaf_node!{
+                                    NavigationLink(destination: ProductsView(name: category.name)){
+                                        CategoryView(name: category.name)
+                                    }
+                                }
+                                else{
+                                    NavigationLink(destination: BrowseView(title: category.name)){
+                                        CategoryView(name: category.name)
+                                    }
+                                }
                             }
                         }
                     }
                 }.padding(.top,1)
             }
         }.navigationTitle(CategoriesVM.parent)
-        .onAppear{
-            CategoriesVM.QueryCategories()
-        }
     }
 }
 

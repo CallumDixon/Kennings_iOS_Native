@@ -10,9 +10,12 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Color.init(UIColor(hexString: "F2F2F2"))
-            .edgesIgnoringSafeArea(.all)
-          Text("Home View")
+            Color.init(UIColor(hexString: "F2F2F2")).edgesIgnoringSafeArea(.all)
+    
+            VStack{
+                Text("Home View")
+                Button("Remove item", action: { UserDefaults.standard.removeObject(forKey: "items")})
+            }
         }
     }
 }

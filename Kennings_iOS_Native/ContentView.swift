@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
+    @StateObject var basket = BasketViewModel()
     
     var body: some View {
         TabView(selection: $selection){
@@ -35,6 +36,7 @@ struct ContentView: View {
         }.onAppear{
             UITabBar.appearance().backgroundColor = .white
         }.accentColor(.init(UIColor(hexString: "#96C72B")))
+            .environmentObject(basket)
     }
 }
 extension UIColor {

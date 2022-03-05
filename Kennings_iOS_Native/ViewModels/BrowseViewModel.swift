@@ -4,11 +4,10 @@
 //
 //  Created by Callum Dixon on 09/02/2022.
 //
-
-import SwiftUI
+import Foundation
 import Amplify
 
-class BrowseViewModel: ObservableObject
+final class BrowseViewModel: ObservableObject
 {
     @Published var categoryList:[Category] = []
     @Published var loading = true
@@ -25,28 +24,31 @@ class BrowseViewModel: ObservableObject
         let filter = Category.keys.parent == self.parent
         
         Amplify.API.query(request: .paginatedList(Category.self, where: filter ,limit: 1000)) { event in
-            switch event {
-            case .success(let result):
-                switch result {
-                case .success(let categories):
-                    
-                    let sortedCategories = categories.sorted(by: {(i1, i2) -> Bool in
+            
+            DispatchQueue.main.async {
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let categories):
                         
-                        if let Ui1 = i1.order, let Ui2 = i2.order {
-                            return (Ui1 < Ui2)
-                        }
-                        return false
-                    })
-                
-                    self.categoryList = sortedCategories
+                        let sortedCategories = categories.sorted(by: {(i1, i2) -> Bool in
+                            
+                            if let Ui1 = i1.order, let Ui2 = i2.order {
+                                return (Ui1 < Ui2)
+                            }
+                            return false
+                        })
                     
-                    self.loading = false
-                    
+                        self.categoryList = sortedCategories
+                        
+                        self.loading = false
+                        
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
                 case .failure(let error):
-                    print("Got failed result with \(error.errorDescription)")
+                    print("Got failed event with error \(error)")
                 }
-            case .failure(let error):
-                print("Got failed event with error \(error)")
             }
         }
     }
