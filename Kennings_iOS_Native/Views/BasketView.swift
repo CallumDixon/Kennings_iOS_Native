@@ -9,15 +9,15 @@ import SwiftUI
 
 struct BasketView: View {
     
-    @EnvironmentObject var Basket: BasketViewModel
-    
+    // Environment object so it can be shared
+    @EnvironmentObject var basket: BasketViewModel
     
     var body: some View {
         ScrollView{
             VStack {
                 Color.init(UIColor(hexString: "F2F2F2"))
                 .edgesIgnoringSafeArea(.all)
-                ForEach(Basket.currentBasket, id: \.self){ item in
+                ForEach(basket.currentBasket, id: \.self){ item in
                     Text(item)
                 }
             }

@@ -7,9 +7,10 @@
 
 import SwiftUI
 
+// Represents the view for a single 
 struct ProductView: View {
     @StateObject private var ProductVM: ProductViewModel
-    @EnvironmentObject var Basket: BasketViewModel
+    @EnvironmentObject var basket: BasketViewModel
 
     init(name: String){
         _ProductVM = StateObject(wrappedValue: ProductViewModel(Name: name))
@@ -29,7 +30,7 @@ struct ProductView: View {
                         Text(ProductVM.product!.description)
                         Text(String((ProductVM.product?.cost)!))
                         Button(action: {
-                            Basket.addBasketItem(name: ProductVM.product!.name)
+                            basket.addBasketItem(name: ProductVM.product!.name)
                         }){
                             Text("Add to Basket")
                         }

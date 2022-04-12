@@ -19,6 +19,7 @@ final class ProductViewModel: ObservableObject
         QueryProducts()
     }
     
+    // Fetches a single product from the API
     func QueryProducts() {
         
         let filter = Product.keys.name == self.name
@@ -34,6 +35,7 @@ final class ProductViewModel: ObservableObject
                     switch result {
                         
                     case .success(let products):
+                        // An array is returned, so select first element and set loading flag so product view can re-render
                         self.product = products.elements[0]
                         self.loading = false
                         

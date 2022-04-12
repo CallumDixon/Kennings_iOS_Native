@@ -18,6 +18,7 @@ struct ProductsView: View {
             Color.init(UIColor(hexString: "F2F2F2"))
                 .edgesIgnoringSafeArea(.all)
             
+            // If products are being fetched display the progress view
             if ProductsVM.loading {
                 ProgressView()
             }
@@ -37,6 +38,7 @@ struct ProductsView: View {
     }
 }
 
+// Takes name, price as parameter. Renders a product view item for each product fetched.
 struct ProductsViewItem: View {
     
     var name: String

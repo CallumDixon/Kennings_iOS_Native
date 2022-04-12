@@ -20,38 +20,44 @@ struct BrowseView: View {
     var body: some View {
         
         ZStack {
-            Color.init(UIColor(hexString: "F2F2F2"))
-            .edgesIgnoringSafeArea(.all)
-            
+            Color.init(UIColor(hexString: "#96C72B")).edgesIgnoringSafeArea(.all)
+
+            // If the categories are still being fetched, render the progress symbol
             if CategoriesVM.loading {
-                ProgressView()
+                Color.init(UIColor(hexString: "F2F2F2")).overlay(
+
+                ProgressView())
             }
             else {
-                
+                Color.init(UIColor(hexString: "F2F2F2")).overlay(
+
                 ScrollView{
                     VStack{
                         ForEach(CategoriesVM.categoryList, id:\.id) {category in
                             Group{
                                 
+                                // Render category that can navigate to products
                                 if category.leaf_node!{
                                     NavigationLink(destination: ProductsView(name: category.name)){
                                         CategoryView(name: category.name)
-                                    }
+                                    }.isDetailLink(false)
                                 }
+                                // Render category that can navigate to other categories
                                 else{
                                     NavigationLink(destination: BrowseView(title: category.name)){
                                         CategoryView(name: category.name)
-                                    }
+                                    }.isDetailLink(false)
                                 }
                             }
                         }
                     }
-                }.padding(.top,1)
+                }.padding(.top,1))
             }
         }.navigationTitle(CategoriesVM.parent)
     }
 }
 
+// Takes a name parameter and renders a single category view
 struct CategoryView: View {
     
     var name: String
@@ -60,12 +66,9 @@ struct CategoryView: View {
         
         Text(name)
             .foregroundColor(.black)
-            .frame(width: 300, height: 50)
+            .frame(width: 350, height: 45, alignment: .leading)
             .padding(10)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(Color.gray)
-            )
+            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray))
     }
 }
 

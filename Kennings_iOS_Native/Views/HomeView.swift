@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var basket: BasketViewModel
+    
+    func removeAll() {
+        UserDefaults.standard.removeObject(forKey: "items")
+        basket.removeBasketAll()
+    }
+    
     var body: some View {
         ZStack {
-            Color.init(UIColor(hexString: "F2F2F2")).edgesIgnoringSafeArea(.all)
-    
-            VStack{
-                Text("Home View")
-                Button("Remove item", action: { UserDefaults.standard.removeObject(forKey: "items")})
-            }
+            Color.init(UIColor(hexString: "#96C72B")).edgesIgnoringSafeArea(.all)
+            
+            
+            Color.init(UIColor(hexString: "F2F2F2")).overlay(
+                VStack{
+                    Text("Home View")
+                    // For testing the basket storage integration
+                    Button("Remove item", action: { removeAll() })
+                }
+            )
+                
         }
     }
 }

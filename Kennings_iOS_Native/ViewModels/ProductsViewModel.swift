@@ -19,8 +19,10 @@ final class ProductsViewModel : ObservableObject
         QueryProducts()
     }
     
+    // Calls the products API from AWS
     func QueryProducts() {
         
+        // Ensures only products with the requested parent category are returned
         let filter = Product.keys.parent == self.parent
         
         Amplify.API.query(request: .paginatedList(Product.self,
@@ -34,6 +36,7 @@ final class ProductsViewModel : ObservableObject
                     switch result {
                         
                     case .success(let products):
+                        // Updates the products and sets the loading flag so that the products view knows to re-render
                         self.products = products.elements
                         self.loading = false
                         

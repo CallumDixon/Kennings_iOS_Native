@@ -12,31 +12,34 @@ struct ContentView: View {
     @StateObject var basket = BasketViewModel()
     
     var body: some View {
-        TabView(selection: $selection){
-            HomeView()
-                .tabItem{
-                    Text("Home")
-                    Image(systemName: "house.fill")
-                }
-            BrowseNavigatorView(initialTitle: "Categories")
-                .tabItem{
-                    Text("Browse")
-                    Image(systemName: "text.book.closed.fill")
-                }
-            AccountView()
-                .tabItem{
-                    Text("Account")
-                    Image(systemName: "person.fill")
-                }
-            BasketView()
-                .tabItem{
-                    Text("Basket")
-                    Image(systemName: "cart.fill")
-                }
-        }.onAppear{
-            UITabBar.appearance().backgroundColor = .white
-        }.accentColor(.init(UIColor(hexString: "#96C72B")))
-            .environmentObject(basket)
+        ZStack{
+            Color.init(uiColor: UIColor(hexString: "#96C72B")).edgesIgnoringSafeArea(.all)
+                            
+            TabView(selection: $selection){
+                    HomeView()
+                        .tabItem{
+                            Text("Home")
+                            Image(systemName: "house.fill")
+                        }
+                    BrowseNavigatorView(initialTitle: "Categories")
+                        .tabItem{
+                            Text("Browse")
+                            Image(systemName: "text.book.closed.fill")
+                        }
+                    AccountView()
+                        .tabItem{
+                            Text("Account")
+                            Image(systemName: "person.fill")
+                        }
+                    BasketView()
+                        .tabItem{
+                            Text("Basket")
+                            Image(systemName: "cart.fill")
+                        }
+                }.onAppear{UITabBar.appearance().backgroundColor = .white}
+                .accentColor(.init(UIColor(hexString: "#96C72B"))).environmentObject(basket)
+
+        }
     }
 }
 extension UIColor {

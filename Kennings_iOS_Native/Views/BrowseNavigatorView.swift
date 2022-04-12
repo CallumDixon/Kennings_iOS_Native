@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+
+// This initialises a stack component.
+// It can be navigated to from the tabs, and allows browse screens to stack on top
 struct BrowseNavigatorView: View {
     
     var initialTitle: String
@@ -14,7 +17,8 @@ struct BrowseNavigatorView: View {
     var body: some View {
         NavigationView {
             BrowseView(title: initialTitle)
-        }.navigationViewStyle(.stack) 
+        }
+        .navigationViewStyle(.stack)
     }
 }
 

@@ -18,19 +18,22 @@ final class BrowseViewModel: ObservableObject
         QueryCategories()
     }
     
-    
+    // Calls the API from AWS
     func QueryCategories() {
         
+        // Ensures data is only selected that has the required parent category
         let filter = Category.keys.parent == self.parent
         
         Amplify.API.query(request: .paginatedList(Category.self, where: filter ,limit: 1000)) { event in
             
+            // Prevents Xcode flagging that this can only be done in the main thread
             DispatchQueue.main.async {
                 switch event {
                 case .success(let result):
                     switch result {
                     case .success(let categories):
                         
+                        // Sort the categories into the required order
                         let sortedCategories = categories.sorted(by: {(i1, i2) -> Bool in
                             
                             if let Ui1 = i1.order, let Ui2 = i2.order {
@@ -38,7 +41,8 @@ final class BrowseViewModel: ObservableObject
                             }
                             return false
                         })
-                    
+                        
+                        // Once fetched, set the data and the loading flag, so the browse view will re-render
                         self.categoryList = sortedCategories
                         
                         self.loading = false

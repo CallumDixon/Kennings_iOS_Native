@@ -10,9 +10,16 @@ import SwiftUI
 struct AccountView: View {
     var body: some View {
         ZStack {
-            Color.init(UIColor(hexString: "F2F2F2"))
-            .edgesIgnoringSafeArea(.all)
-          Text("Account View")
+            Color.init(UIColor(hexString: "#96C72B")).edgesIgnoringSafeArea(.all)
+            
+            
+            Color.init(UIColor(hexString: "F2F2F2")).overlay(
+                VStack{
+                    Text("Account View")
+
+                }
+            )
+                
         }
     }
 }
